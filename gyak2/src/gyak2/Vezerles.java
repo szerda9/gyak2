@@ -145,7 +145,7 @@ public class Vezerles {
     }
 
     private void kedvezmenyOsszeg() {
-        int ossz = 0;
+        int ossz ;
         System.out.println("\nKedvezményezettek: ");
         for (Resztvevo resztvevo : resztvevok) {
             ossz = 0;
