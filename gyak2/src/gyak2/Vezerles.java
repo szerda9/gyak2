@@ -41,6 +41,7 @@ public class Vezerles {
         maxKeres();
         kedvezmenyOsszeg();
         rendezes();
+        ablakba();
     }
 
     private void adatBevitel() {
@@ -167,4 +168,15 @@ public class Vezerles {
             
         }
     }
+
+    private void ablakba() {
+        int szelesseg = 600, magassag = 300;
+        String cim = "Jubileumi rendezvények";
+        Ablak ablak = new Ablak(szelesseg, magassag, cim);
+        String[] oszlopNevek = {"Cím","Időpont","Jegyár (Ft)","Résztvevőszám","Bevétel (Ft)"};
+        ablak.ablakbaIr(rendezvenyek,oszlopNevek);
+        
+//        ablak.setVisible(true);     
+    }
+    
 }
