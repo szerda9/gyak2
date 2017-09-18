@@ -148,6 +148,7 @@ public class Vezerles {
         int ossz = 0;
         System.out.println("\nKedvezményezettek: ");
         for (Resztvevo resztvevo : resztvevok) {
+            ossz = 0;
             if(resztvevo instanceof PTEsResztvevo){
                 for (Rendezveny rendezveny : resztvevo.getRendezvenyek()) {
                     ossz += rendezveny.getJegyAr() - 
